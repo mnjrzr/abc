@@ -1,5 +1,4 @@
 const std = @import("std");
-const testing = std.testing;
 
 pub fn readStringFromStdinUntilDelimiter(stdin: std.fs.File, delimiter: u8) ![]u8 {
     var buf: [64]u8 = undefined;
