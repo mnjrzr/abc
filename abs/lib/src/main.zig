@@ -7,6 +7,6 @@ pub fn readStringFromStdinUntilDelimiter(stdin: std.fs.File, delimiter: u8) ![]u
     return fbs.getWritten();
 }
 
-pub fn stringToInt(s: []u8, comptime T: type) !i32 {
+pub fn stringToInt(s: []u8, comptime T: type) !T {
     return try std.fmt.parseInt(T, s, 10);
 }
